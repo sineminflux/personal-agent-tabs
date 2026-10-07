@@ -38,14 +38,14 @@ body{display:grid;place-items:center}
 /* Tabs */
 .tabs{display:grid;grid-template-columns:repeat(8,1fr);gap:var(--u);flex:none}
 .tab{
-  appearance:none;font:600 max(11px,1.7cqw)/1 var(--sans);color:var(--stone);
+  appearance:none;font:400 max(11px,1.7cqw)/1 var(--sans);color:var(--stone);
   background:transparent;border:.2cqw solid var(--sage);border-radius:999px;
   height:calc(var(--u)*4);padding:0 var(--u);cursor:pointer;white-space:nowrap;
   display:flex;align-items:center;justify-content:center;
   transition:background-color .15s ease,color .15s ease;
 }
 .tab:hover{background:var(--forest)}
-.tab[aria-selected="true"]{background:var(--highlight);border-color:var(--highlight);color:var(--forest)}
+.tab[aria-selected="true"]{background:var(--highlight);border-color:var(--highlight);color:var(--forest);font-weight:600}
 .tab:focus-visible{outline:.3cqw solid var(--highlight);outline-offset:.25cqw}
 
 /* Card */
@@ -57,14 +57,14 @@ body{display:grid;place-items:center}
 }
 .head{display:flex;align-items:baseline;gap:calc(var(--u)*1.5);flex:none}
 .name{font:400 5cqw/1 var(--serif);color:var(--evergreen);letter-spacing:-.025em}
-.by{font:500 max(11px,1.7cqw)/1.2 var(--sans);color:var(--evergreen)}
-.chip{font:700 max(10px,1.4cqw)/1 var(--sans);background:var(--sage);color:var(--forest);border-radius:999px;padding:.55cqw 1.3cqw;align-self:center}
+.by{font:400 max(11px,1.7cqw)/1.2 var(--sans);color:var(--evergreen)}
+.chip{font:500 max(10px,1.4cqw)/1 var(--sans);background:var(--sage);color:var(--forest);border-radius:999px;padding:.55cqw 1.3cqw;align-self:center}
 
 /* Tiles */
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:calc(var(--u)*1.5);flex:none}
 .tile{border-radius:calc(var(--u)*1.5);padding:calc(var(--u)*1.5);border:.2cqw solid var(--evergreen);display:flex;flex-direction:column;gap:var(--u);min-height:calc(var(--u)*9)}
-.tile .k{font:600 max(10.5px,1.5cqw)/1 var(--sans);display:flex;align-items:center;gap:.7cqw;color:var(--evergreen)}
-.tile .v{font:700 2cqw/1.2 var(--sans);color:var(--forest)}
+.tile .k{font:400 max(10.5px,1.5cqw)/1 var(--sans);display:flex;align-items:center;gap:.7cqw;color:var(--evergreen)}
+.tile .v{font:600 2cqw/1.2 var(--sans);color:var(--forest)}
 .g{display:inline-grid;place-items:center;width:1.9cqw;height:1.9cqw;min-width:13px;min-height:13px;border-radius:50%;font:700 max(9px,1.2cqw)/1 var(--sans)}
 .tile.bad{background:var(--forest);border-color:var(--forest)}
 .tile.bad .k{color:var(--sage)}
@@ -85,8 +85,8 @@ body{display:grid;place-items:center}
   margin-top:auto;flex:none;background:var(--evergreen);color:var(--stone);border-radius:calc(var(--u)*1.5);
   padding:calc(var(--u)*1.5) calc(var(--u)*2);display:flex;align-items:center;gap:calc(var(--u)*2);
 }
-.watch b{font:700 max(10px,1.35cqw)/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--highlight);flex:none}
-.watch span{font:500 max(11.5px,1.8cqw)/1.3 var(--sans)}
+.watch b{font:500 max(10px,1.35cqw)/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--highlight);flex:none}
+.watch span{font:400 max(11.5px,1.8cqw)/1.3 var(--sans)}
 
 /* Narrow blocks (phones): essentials only, still no scroll */
 @container (max-width:560px){
